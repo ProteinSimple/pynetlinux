@@ -1,9 +1,6 @@
-MANIFEST
-dist
-build
-*.pyc
-debian/python-pynetlinux
+*.deb
+build/
+debian/*.log
 debian/files
-debian/*.debhelper
-debian/*.substvars
-
+debian/python-pynetlinux.*
+debian/python-pynetlinux/
