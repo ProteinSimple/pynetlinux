@@ -1,6 +1,9 @@
 *.deb
+MANIFEST
 build/
+deb_dist/
 debian/*.log
 debian/files
 debian/python-pynetlinux.*
 debian/python-pynetlinux/
+dist/

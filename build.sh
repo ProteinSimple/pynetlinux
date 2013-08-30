@@ -3,11 +3,6 @@
 set -e
 set -x
 
-# Build a binary package.
-dpkg-buildpackage -b -uc -us
-
-# We don't need the .changes file.
-rm ../*.changes
-
-# Move the package back into the current directory.
-mv ../*.deb .
+rm -rf deb_dist
+python setup.py --command-packages=stdeb.command bdist_deb sdist
+cp -f deb_dist/*.deb .
